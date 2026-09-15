@@ -1,7 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 797.1 132" width="797.1" height="132" role="img" fill="currentColor">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 782.6 132" width="782.6" height="132" role="img" fill="currentColor">
 <title>Veskana</title>
-<g transform="translate(-43.41862708490329,-16.097560975609756) scale(1.6098)"><path d="M50.0,10.0 L68.61,45.5 L31.39,45.5 Z" fill="currentColor"/><path d="M26.97,53.93 A26.0,26.0 0 1 0 73.03,53.93 Z" fill="currentColor"/></g>
-<g transform="translate(130.14,16.0) scale(1.0)" fill="currentColor">
+<g transform="translate(-42.312030207253805,-11.715976331360947) scale(1.5621)"><path d="M31.55,45.00 C36.18,35.56 40.70,25.11 44.00,16.00 C48.10,4.67 51.90,4.67 56.00,16.00 C59.30,25.11 63.82,35.56 68.45,45.00 Z" fill="currentColor"/><path d="M27.09,53.71 A26,26 0 1 0 72.91,53.71 Z" fill="currentColor"/></g>
+<g transform="translate(127.59,16.0) scale(1.0)" fill="currentColor">
 <g transform="translate(0,0)">
 <path d="M0,0 L14,0 L36,75.9 L58,0 L72,0 L43,100 L29,100 Z"/>
 </g>
@@ -20,12 +20,12 @@
 <path d="M0,100 L14,100 L36,24.1 L58,100 L72,100 L43,0 L29,0 Z"/>
 <path d="M18,62 L54,62 L54,76 L18,76 Z"/>
 </g>
-<g transform="translate(491,0)">
+<g transform="translate(489,0)">
 <path d="M0,0 L14,0 L14,100 L0,100 Z"/>
-<path d="M58,0 L72,0 L72,100 L58,100 Z"/>
-<path d="M0,0 L14,0 L72,78 L72,100 L58,100 L0,22 Z"/>
+<path d="M50,0 L64,0 L64,100 L50,100 Z"/>
+<path d="M0,0 L14,0 L64,74.8 L64,100 L50,100 L0,25.2 Z"/>
 </g>
-<g transform="translate(595,0)">
+<g transform="translate(583,0)">
 <path d="M0,100 L14,100 L36,24.1 L58,100 L72,100 L43,0 L29,0 Z"/>
 <path d="M18,62 L54,62 L54,76 L18,76 Z"/>
 </g>

@@ -18,19 +18,21 @@ L = {
                 "M14,42 L14,62 L52,100 L72,100 Z"]},
  "A": {"fills":["M0,100 L14,100 L36,24.1 L58,100 L72,100 L43,0 L29,0 Z",
                 "M18,62 L54,62 L54,76 L18,76 Z"]},
- "N": {"fills":["M0,0 L14,0 L14,100 L0,100 Z",
-                "M58,0 L72,0 L72,100 L58,100 Z",
-                "M0,0 L14,0 L72,78 L72,100 L58,100 L0,22 Z"]},
+ "N": {"w":64,
+       "fills":["M0,0 L14,0 L14,100 L0,100 Z",
+                "M50,0 L64,0 L64,100 L50,100 Z",
+                "M0,0 L14,0 L64,74.8 L64,100 L50,100 L0,25.2 Z"]},
 }
-WORD, ADV, LW, CAP = "VESKANA", 96, 72, 100
+WORD, TRACK, LW, CAP = "VESKANA", 24, 72, 100
+def lw(ch): return L[ch].get("w", LW)
 # optische kerning: schuine letters (V, A, K) hebben andere witruimte dan rechte
-KERN = {"VE": -8, "ES": 0, "SK": 3, "KA": 10, "AN": 6, "NA": 8}
+KERN = {"VE": -8, "ES": 0, "SK": 3, "KA": 10, "AN": 4, "NA": 6}
 OFFS, _x = [], 0.0
 for _i, _c in enumerate(WORD):
     OFFS.append(_x)
     if _i < len(WORD)-1:
-        _x += ADV + KERN.get(WORD[_i:_i+2], 0)
-WORD_W = OFFS[-1] + LW
+        _x += lw(_c) + TRACK + KERN.get(WORD[_i:_i+2], 0)
+WORD_W = OFFS[-1] + lw(WORD[-1])
 
 def wordmark(color="currentColor", x=0, y=0, scale=1.0):
     out = [f'<g transform="translate({x},{y}) scale({scale})" fill="{color}">']
@@ -44,20 +46,11 @@ def wordmark(color="currentColor", x=0, y=0, scale=1.0):
     out.append('</g>')
     return "\n".join(out)
 
-# ---------- merkteken: druppel gesplitst door de filterspleet ----------
-# Bovenste driehoek = water dat binnenkomt. Onderste kom = de gesloten pompkamer.
-# De spleet ertussen IS het mechanisme: eerst de filter, dan de pomp.
-APEX=(50.0,10.0); C=(50.0,66.0); R=26.0
-d   = C[1]-APEX[1]
-th  = math.acos(R/d)
-TLx = C[0]-R*math.sin(th); TLy = C[1]-R*math.cos(th)
-TRx = C[0]+R*math.sin(th)
-CUT = 45.5
-t   = (CUT-APEX[1])/(TLy-APEX[1])
-CLx = APEX[0]-t*(APEX[0]-TLx); CRx = APEX[0]+t*(APEX[0]-TLx)
-MARK_TRI  = f"M{APEX[0]},{APEX[1]} L{CRx:.2f},{CUT} L{CLx:.2f},{CUT} Z"
-MARK_BOWL = f"M{TLx:.2f},{TLy:.2f} A{R},{R} 0 1 0 {TRx:.2f},{TLy:.2f} Z"
-MARK_TOP, MARK_BOT = APEX[1], C[1]+R          # 10 .. 92
+# ---------- merkteken ----------
+# Boven de spleet het water dat binnenkomt, onder de spleet de gesloten kamer:
+# eerst de filter, dan de pomp. Geometrie staat in mark_geom.py.
+from mark_geom import MARK_TRI, MARK_BOWL, MARK_TOP, MARK_BOT, MARK_L, MARK_R
+TLx, TRx = MARK_L, MARK_R
 
 def mark(color="currentColor", accent=None, x=0, y=0, scale=1.0):
     a = accent or color
@@ -139,4 +132,4 @@ body = ('<title>Veskana</title>\n'
         + "\n" + wordmark(INK, x=0, y=168+gap2))
 write("veskana-logo-stacked-colour.svg", svg(WORD_W, toth2, body))
 
-print("\nmerkteken inkt: %.1f x %.1f  |  spleet %.1f" % (TRx-TLx, MARK_BOT-MARK_TOP, TLy-CUT))
+print("\nmerkteken inkt: %.1f x %.1f  |  wordmark: %.0f x %d" % (MARK_R-MARK_L, MARK_BOT-MARK_TOP, WORD_W, CAP))

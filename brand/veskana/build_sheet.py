@@ -100,9 +100,9 @@ footer{{background:var(--ink);color:#9fc0c6;font-size:.85rem;padding-block:30px}
     <figure><img src="{png("veskana-favicon-32.png")}" width="32" height="32" alt=""><figcaption>32 px · favicon</figcaption></figure>
     <figure><img src="{png("veskana-favicon-16.png")}" width="16" height="16" alt=""><figcaption>16 px</figcaption></figure>
   </div>
-  <p style="margin-top:20px;font-size:.88rem;color:#6b8288">Onder 24 px vervalt de aqua driehoek naar wit: twee kleuren
+  <p style="margin-top:20px;font-size:.88rem;color:#6b8288">Onder 24 px vervalt de aqua druppelpunt naar wit: twee kleuren
   op die grootte wordt modder. Het bestand <code>veskana-favicon.svg</code> doet dat nog niet automatisch; zet de
-  driehoek op <code>#FFFFFF</code> als je een 16 px versie apart exporteert.</p>
+  druppelpunt op <code>#FFFFFF</code> als je een 16 px versie apart exporteert.</p>
 </div></section>
 
 <section class="mist"><div class="wrap">
@@ -132,7 +132,7 @@ footer{{background:var(--ink);color:#9fc0c6;font-size:.85rem;padding-block:30px}
       </ul></div>
     <div class="card bad"><b>Niet</b>
       <ul class="rules" style="margin-top:10px">
-        <li>De spleet dichtmaken of de driehoek laten raken aan de kom: dan is het mechanisme weg.</li>
+        <li>De spleet dichtmaken of de druppelpunt laten raken aan de kom: dan is het mechanisme weg.</li>
         <li>Verhoudingen, tracking of kleuren aanpassen, of het logo op een hoek zetten.</li>
         <li>Een verloop, glans of waterreflectie toevoegen.</li>
         <li>Een pootafdruk, hondensilhouet of waterstraaltje ernaast plaatsen.</li>
