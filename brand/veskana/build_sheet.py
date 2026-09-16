@@ -19,7 +19,7 @@ HTML = f"""<!doctype html>
 <title>Veskana · merkblad</title>
 <style>
 *,*::before,*::after{{box-sizing:border-box}}
-:root{{--ink:#0D2A33;--aqua:#0F8F9E;--paper:#F6F4EF;--steel:#8FA3A8;--line:#dfe6e8;--mist:#EEF5F6}}
+:root{{--ink:#1F3A44;--aqua:#2F8F9D;--paper:#F7F5F0;--steel:#8A949B;--line:#dfe6e8;--mist:#EEF5F6}}
 body{{margin:0;font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:#fff}}
 .wrap{{max-width:1000px;margin:0 auto;padding-inline:24px}}
 section{{padding-block:clamp(40px,6vw,72px)}}
@@ -109,12 +109,14 @@ footer{{background:var(--ink);color:#9fc0c6;font-size:.85rem;padding-block:30px}
   <p class="eyebrow">Kleur</p>
   <h2>Drie kleuren, en dat is het</h2>
   <div class="swatches" style="margin-top:22px">
-    <div class="sw"><div class="chip" style="background:#0D2A33"></div><div class="meta"><b>Steel Ink</b><code>#0D2A33</code><br><code>rgb(13,42,51)</code></div></div>
-    <div class="sw"><div class="chip" style="background:#0F8F9E"></div><div class="meta"><b>Veskana Aqua</b><code>#0F8F9E</code><br><code>rgb(15,143,158)</code></div></div>
-    <div class="sw"><div class="chip" style="background:#F6F4EF"></div><div class="meta"><b>Paper</b><code>#F6F4EF</code><br><code>rgb(246,244,239)</code></div></div>
-    <div class="sw"><div class="chip" style="background:#8FA3A8"></div><div class="meta"><b>Steel (support)</b><code>#8FA3A8</code><br><code>alleen voor lijnen</code></div></div>
+    <div class="sw"><div class="chip" style="background:#1F3A44"></div><div class="meta"><b>Petrolblauw</b><code>#1F3A44</code><br><code>tekst, koppen, merkteken</code></div></div>
+    <div class="sw"><div class="chip" style="background:#2F8F9D"></div><div class="meta"><b>Teal</b><code>#2F8F9D</code><br><code>de brugkleur, accent</code></div></div>
+    <div class="sw"><div class="chip" style="background:#7A9E7E"></div><div class="meta"><b>Saliegroen</b><code>#7A9E7E</code><br><code>zorg, licht: #E8EFE6</code></div></div>
+    <div class="sw"><div class="chip" style="background:#F7F5F0"></div><div class="meta"><b>Warm gebroken wit</b><code>#F7F5F0</code><br><code>achtergrond</code></div></div>
+    <div class="sw"><div class="chip" style="background:#8A949B"></div><div class="meta"><b>Staalgrijs</b><code>#8A949B</code><br><code>lijnen, secundaire tekst</code></div></div>
+    <div class="sw"><div class="chip" style="background:#D98E3A"></div><div class="meta"><b>Warm oker</b><code>#D98E3A</code><br><code>alleen knoppen</code></div></div>
   </div>
-  <p style="margin-top:18px">Aqua is een accent, geen vlakvulling: knoppen, de druppelpunt, één lijn. Zodra aqua het vlak
+  <p style="margin-top:18px">Teal is een accent, geen vlakvulling: knoppen, de druppelpunt, één lijn. Zodra aqua het vlak
   vult, kantelt het merk van staal naar plastic. Dat is precies de associatie die deze markt afstraft.</p>
 </div></section>
 
@@ -136,7 +138,7 @@ footer{{background:var(--ink);color:#9fc0c6;font-size:.85rem;padding-block:30px}
         <li>Verhoudingen, tracking of kleuren aanpassen, of het logo op een hoek zetten.</li>
         <li>Een verloop, glans of waterreflectie toevoegen.</li>
         <li>Een pootafdruk, hondensilhouet of waterstraaltje ernaast plaatsen.</li>
-        <li>Het logo op aqua zetten: ink op paper of wit op ink, verder niets.</li>
+        <li>Het logo op teal of oker zetten: petrol op gebroken wit, of wit op petrol, verder niets.</li>
       </ul></div>
   </div>
 </div></section>

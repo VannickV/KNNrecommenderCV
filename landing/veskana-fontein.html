@@ -1,0 +1,951 @@
+<!doctype html>
+<html lang="nl-BE">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Veskana · roestvrijstalen drinkfontein · de filter gaat eerst, dan de pomp</title>
+<meta name="description" content="Je vorige fontein ging niet stuk. Hij at zijn eigen pomp op. De Veskana filtert vóór de pomp, de pomp is los te koop, de filterprijs staat op deze pagina en je hebt 100 dagen geld terug.">
+<link rel="icon" href="../brand/veskana/veskana-favicon.svg">
+<meta property="og:title" content="Je vorige fontein ging niet stuk. Hij at zijn eigen pomp op.">
+<meta property="og:description" content="De filter zat op de verkeerde plek. Bij bijna elk merk. Veskana draait het om.">
+<style>
+/* =====================================================================
+   VESKANA productpagina
+   Palet: petrol #1F3A44 · teal #2F8F9D · salie #7A9E7E/#E8EFE6
+          staal #8A949B · papier #F7F5F0 · oker #D98E3A (alleen knoppen)
+   [x] = placeholder, geel gemarkeerd. Knop links onder zet de markering uit.
+   ===================================================================== */
+*,*::before,*::after{box-sizing:border-box}
+:root{
+  --paper:#F7F5F0; --white:#fff;
+  --ink:#1F3A44; --ink-2:#3C5560; --muted:#6C7C84;
+  --teal:#2F8F9D; --teal-dark:#25727D; --teal-wash:#E6F1F2;
+  --sage:#7A9E7E; --sage-light:#E8EFE6;
+  --steel:#8A949B; --line:#DDD9D1; --line-2:#E8E4DC;
+  --cta:#D98E3A; --cta-dark:#C47B28;
+  --radius:16px;
+  --shadow:0 1px 2px rgba(31,58,68,.05),0 18px 40px -20px rgba(31,58,68,.30);
+  --font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;font-family:var(--font);background:var(--paper);color:var(--ink);
+  font-size:17px;line-height:1.62;-webkit-font-smoothing:antialiased;padding-bottom:env(safe-area-inset-bottom,0px)}
+img,svg{max-width:100%}
+[hidden]{display:none!important}
+h1,h2,h3{line-height:1.1;letter-spacing:-.022em;margin:0 0 .5em;text-wrap:balance}
+h1{font-size:clamp(2rem,5.2vw,3.15rem);font-weight:800}
+h2{font-size:clamp(1.6rem,4vw,2.5rem);font-weight:800}
+h3{font-size:clamp(1.08rem,2.2vw,1.3rem);font-weight:700}
+p{margin:0 0 1.05em}
+a{color:inherit}
+.wrap{max-width:1140px;margin:0 auto;padding-inline:20px}
+.narrow{max-width:760px}
+section{padding-block:clamp(48px,7vw,92px)}
+section[id],[id]{scroll-margin-top:86px}
+.white{background:var(--white)}
+.sage{background:var(--sage-light)}
+.deep{background:var(--ink);color:#E9F1F2}
+.deep h2,.deep h3{color:#fff}
+.deep p{color:#C3D5D9}
+.eyebrow{font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;font-weight:800;color:var(--teal);margin:0 0 14px}
+.deep .eyebrow{color:#6FC3CE}
+.lead{font-size:clamp(1.05rem,2.1vw,1.22rem);color:var(--ink-2)}
+.deep .lead{color:#C3D5D9}
+
+/* ---------- announcement + nav ---------- */
+.announce{background:var(--ink);color:#D6E5E8;font-size:.87rem;text-align:center;
+  padding:9px 16px calc(9px + env(safe-area-inset-top,0px));line-height:1.5}
+.announce b{color:#fff}
+.nav{position:sticky;top:0;z-index:40;background:rgba(247,245,240,.93);backdrop-filter:saturate(180%) blur(10px);
+  border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:18px;padding-block:11px}
+.nav .logo{display:block;width:158px}
+.nav .logo svg{display:block;width:100%;height:auto}
+.navlinks{display:none;gap:26px;font-size:.92rem;font-weight:600}
+.navlinks a{text-decoration:none;color:var(--ink-2)}
+.navlinks a:hover{color:var(--teal)}
+@media(min-width:900px){.navlinks{display:flex}}
+
+/* ---------- knoppen ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;width:100%;
+  background:var(--cta);color:#26200F;font-weight:800;font-size:1.04rem;letter-spacing:.01em;
+  border:0;border-radius:999px;padding:18px 32px;text-decoration:none;cursor:pointer;
+  box-shadow:0 12px 26px -12px rgba(217,142,58,.9);transition:transform .12s,background .12s}
+.btn:hover{background:var(--cta-dark);transform:translateY(-1px)}
+.btn.sm{padding:12px 22px;font-size:.92rem;width:auto}
+.btn.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--line);box-shadow:none;font-weight:700}
+.trio{margin-top:12px;font-size:.86rem;color:var(--muted);line-height:1.7;text-align:center}
+.deep .trio{color:#9FBCC2}
+.cta-block{margin-top:34px}
+.cta-block.center{text-align:center;max-width:460px;margin-inline:auto}
+
+/* ---------- hero ---------- */
+.hero{padding-block:clamp(28px,4vw,52px)}
+.hero-grid{display:grid;gap:34px}
+@media(min-width:960px){.hero-grid{grid-template-columns:1fr 1fr;gap:56px;align-items:start}}
+.gallery{position:relative}
+@media(min-width:960px){.gallery{position:sticky;top:84px}}
+.shot{background:linear-gradient(160deg,#fff 0%,#EFEDE7 60%,#E4E7E6 100%);
+  border:1px solid var(--line-2);border-radius:var(--radius);padding:18px;display:grid;place-items:center}
+.shot svg{width:100%;height:auto;max-height:520px}
+.thumbs{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:10px}
+.thumb{border:1px solid var(--line-2);border-radius:10px;background:#fff;aspect-ratio:1;display:grid;place-items:center;
+  font-size:.62rem;letter-spacing:.06em;text-transform:uppercase;color:var(--steel);text-align:center;padding:6px;line-height:1.3}
+.badge{display:inline-flex;align-items:center;gap:8px;background:var(--teal-wash);color:var(--teal-dark);
+  font-size:.74rem;font-weight:800;letter-spacing:.11em;text-transform:uppercase;padding:7px 13px;border-radius:999px;margin-bottom:16px}
+.badge::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--sage)}
+.kicker{font-size:.95rem;color:var(--muted);margin:-6px 0 18px}
+.pricerow{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin:0 0 6px}
+.price{font-size:2.15rem;font-weight:800;letter-spacing:-.03em}
+.price small{font-size:.9rem;font-weight:600;color:var(--muted);letter-spacing:0}
+.usp{list-style:none;margin:22px 0 28px;padding:0;display:grid;gap:12px}
+.usp li{position:relative;padding-left:32px;color:var(--ink-2);font-size:.99rem}
+.usp li b{color:var(--ink)}
+.usp li::before{content:"";position:absolute;left:0;top:.42em;width:19px;height:19px;border-radius:50%;background:var(--teal);
+  -webkit-mask:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M20 6L9 17l-5-5' fill='none' stroke='black' stroke-width='3.4' stroke-linecap='round' stroke-linejoin='round'/></svg>") center/13px no-repeat;
+          mask:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M20 6L9 17l-5-5' fill='none' stroke='black' stroke-width='3.4' stroke-linecap='round' stroke-linejoin='round'/></svg>") center/13px no-repeat}
+
+/* ---------- pakketkeuze ---------- */
+.packs{display:grid;gap:12px;margin:8px 0 22px}
+.pack{position:relative;display:block;cursor:pointer;background:var(--white);border:1.5px solid var(--line);
+  border-radius:14px;padding:18px 20px;transition:border-color .12s,box-shadow .12s}
+.pack:hover{border-color:var(--steel)}
+.pack input{position:absolute;opacity:0;pointer-events:none}
+.pack.is-selected{border-color:var(--teal);box-shadow:0 0 0 3px rgba(47,143,157,.16)}
+.pack .row{display:flex;justify-content:space-between;align-items:flex-start;gap:16px}
+.pack .name{font-weight:800;font-size:1.03rem;display:flex;align-items:center;gap:9px}
+.pack .desc{font-size:.88rem;color:var(--muted);margin-top:2px}
+.pack .amt{font-weight:800;font-size:1.15rem;white-space:nowrap;text-align:right}
+.pack .per{display:block;font-size:.76rem;font-weight:600;color:var(--muted)}
+.tag{background:var(--sage);color:#fff;font-size:.62rem;font-weight:800;letter-spacing:.09em;
+  text-transform:uppercase;padding:3px 8px;border-radius:999px}
+.dot{width:16px;height:16px;border-radius:50%;border:1.5px solid var(--steel);flex:0 0 auto;margin-top:4px;position:relative}
+.pack.is-selected .dot{border-color:var(--teal)}
+.pack.is-selected .dot::after{content:"";position:absolute;inset:3px;border-radius:50%;background:var(--teal)}
+.packhead{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;font-weight:800;color:var(--muted);
+  display:flex;align-items:center;gap:12px;margin:26px 0 4px}
+.packhead::after{content:"";flex:1;height:1px;background:var(--line)}
+.ship{margin-top:18px;font-size:.88rem;color:var(--muted);display:grid;gap:7px}
+.ship b{color:var(--ink)}
+
+/* ---------- vertrouwensstrook ---------- */
+.trust{background:var(--white);border-block:1px solid var(--line)}
+.trust ul{list-style:none;margin:0;padding:20px 0;display:grid;gap:9px 28px;font-size:.9rem;color:var(--ink-2)}
+@media(min-width:760px){.trust ul{grid-template-columns:repeat(3,1fr)}}
+.trust li{position:relative;padding-left:25px}
+.trust li::before{content:"✓";position:absolute;left:0;color:var(--sage);font-weight:800}
+
+/* ---------- quotes ---------- */
+blockquote{margin:0;padding:18px 20px;background:var(--white);border:1px solid var(--line-2);
+  border-left:3px solid var(--teal);border-radius:12px;font-size:.98rem;color:var(--ink-2)}
+blockquote p{margin:0 0 8px;font-style:italic}
+blockquote cite{font-style:normal;font-size:.78rem;color:var(--muted)}
+.quotes{display:grid;gap:14px;margin:26px 0}
+@media(min-width:820px){.quotes.c2{grid-template-columns:1fr 1fr}}
+.deep blockquote{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.15);border-left-color:var(--teal);color:#D5E6E9}
+.deep cite{color:#9FBCC2}
+
+/* ---------- stappen ---------- */
+.steps{counter-reset:s;list-style:none;margin:28px 0 0;padding:0;display:grid;gap:14px}
+@media(min-width:820px){.steps{grid-template-columns:1fr 1fr}}
+.steps li{counter-increment:s;position:relative;padding:20px 20px 20px 62px;border-radius:14px;
+  background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.13)}
+.steps li::before{content:counter(s);position:absolute;left:20px;top:20px;width:28px;height:28px;border-radius:50%;
+  background:var(--teal);color:#fff;font-weight:800;font-size:.9rem;display:grid;place-items:center}
+.steps b{display:block;color:#fff;margin-bottom:3px}
+.steps span{color:#BBD3D8;font-size:.95rem}
+
+/* ---------- diagram ---------- */
+.diagram{margin:34px 0 0;border-radius:var(--radius);overflow:hidden;background:rgba(255,255,255,.04);
+  border:1px solid rgba(255,255,255,.14);padding:clamp(14px,3vw,26px)}
+.diagram svg{width:100%;height:auto;display:block}
+
+/* ---------- tegels ---------- */
+.tiles{display:grid;gap:16px;margin-top:32px}
+@media(min-width:620px){.tiles{grid-template-columns:1fr 1fr}}
+@media(min-width:980px){.tiles{grid-template-columns:repeat(3,1fr)}}
+.tile{background:var(--white);border:1px solid var(--line-2);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow)}
+.tile h3{margin-bottom:.3em;font-size:1.06rem}
+.tile p{margin:0;font-size:.95rem;color:var(--ink-2)}
+.tile .ico{width:34px;height:34px;border-radius:9px;background:var(--teal-wash);display:grid;place-items:center;margin-bottom:14px}
+.tile .ico svg{width:19px;height:19px;stroke:var(--teal-dark);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+
+/* ---------- tabellen ---------- */
+.tablewrap{overflow-x:auto;border:1px solid var(--line-2);border-radius:var(--radius);background:var(--white);box-shadow:var(--shadow)}
+table{width:100%;border-collapse:collapse;min-width:560px;font-size:.95rem}
+th,td{padding:15px 18px;text-align:left;border-bottom:1px solid var(--line-2);vertical-align:top}
+thead th{background:var(--paper);font-size:.74rem;letter-spacing:.11em;text-transform:uppercase;color:var(--muted)}
+tbody tr:last-child td{border-bottom:0}
+.col-v{background:var(--teal-wash);font-weight:600}
+th.col-v{background:#D6E9EB;color:var(--teal-dark)}
+tr.hinge td,tr.hinge th{background:var(--sage-light)}
+tr.hinge td:last-child{background:#D8E7DA}
+
+/* ---------- garantie ---------- */
+.guarantee{display:grid;gap:30px;align-items:center}
+@media(min-width:900px){.guarantee{grid-template-columns:210px 1fr}}
+.seal{width:196px;height:196px;border-radius:50%;background:var(--white);border:3px solid var(--sage);
+  display:grid;place-content:center;text-align:center;margin:0 auto;box-shadow:var(--shadow)}
+.seal b{display:block;font-size:3rem;line-height:1;font-weight:800;color:var(--ink)}
+.seal span{font-size:.74rem;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);font-weight:800}
+
+/* ---------- faq ---------- */
+.faq{margin-top:28px;border-top:1px solid var(--line)}
+details{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;list-style:none;padding:19px 46px 19px 0;font-weight:700;position:relative;font-size:1.02rem}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"";position:absolute;right:9px;top:50%;width:11px;height:11px;margin-top:-9px;
+  border-right:2px solid var(--teal);border-bottom:2px solid var(--teal);transform:rotate(45deg);transition:transform .18s}
+details[open] summary::after{transform:rotate(-135deg);margin-top:-3px}
+details .answer{padding:0 0 20px;color:var(--ink-2);max-width:68ch;font-size:.97rem}
+details .answer p:last-child{margin-bottom:0}
+
+/* ---------- footer ---------- */
+footer{background:var(--ink);color:#A9C3C8;font-size:.87rem;padding-block:42px}
+footer .logo{width:150px;margin-bottom:18px}
+footer .wrap{display:grid;gap:14px}
+footer a{color:#E9F1F2;text-decoration:none;border-bottom:1px solid rgba(233,241,242,.28)}
+.footlinks{display:flex;flex-wrap:wrap;gap:8px 18px;list-style:none;margin:0;padding:0}
+
+/* ---------- sticky balk ---------- */
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:50;background:rgba(255,255,255,.97);backdrop-filter:blur(10px);
+  border-top:1px solid var(--line);padding:11px 16px calc(11px + env(safe-area-inset-bottom,0px));
+  display:flex;align-items:center;gap:14px;transform:translateY(130%);transition:transform .22s;
+  box-shadow:0 -12px 34px -20px rgba(31,58,68,.55)}
+.sticky.show{transform:translateY(0)}
+.sticky .info{flex:1;min-width:0;line-height:1.28}
+.sticky .info b{display:block;font-size:.93rem}
+.sticky .info small{color:var(--muted);font-size:.76rem}
+.sticky .btn{width:auto;padding:14px 24px;font-size:.93rem;flex:0 0 auto}
+@media(min-width:960px){.sticky{display:none}}
+
+/* ---------- placeholders ---------- */
+.ph{background:#FBEFC6;box-shadow:0 0 0 1px #DCC169 inset;border-radius:3px;padding:0 3px;cursor:help}
+.ph-echt{background:#F7DFD9;box-shadow:0 0 0 1px #DBA294 inset}
+.ph-off .ph{background:transparent;box-shadow:none;padding:0}
+.gate{border:1px dashed #C6A253;background:#FEFAEF;border-radius:14px;padding:22px 24px;color:#6B5518;font-size:.93rem;margin:26px 0}
+.gate b{color:#4C3D10}
+.ph-off .gate{display:none}
+.devbar{position:fixed;left:12px;bottom:calc(86px + env(safe-area-inset-bottom,0px));z-index:60;background:var(--ink);
+  color:#fff;border:0;border-radius:999px;padding:9px 15px;font-size:.76rem;font-weight:700;cursor:pointer;opacity:.8;font-family:var(--font)}
+.devbar:hover{opacity:1}
+@media(min-width:960px){.devbar{bottom:16px}}
+@media print{.devbar,.sticky,.nav{display:none}}
+</style>
+</head>
+<body>
+
+<div class="announce">
+  Filters los te koop, de prijs staat op deze pagina · Verzonden uit <span class="ph" title="CHECK: fulfilment">België</span>
+  · <b>100 dagen geld terug</b>, ook als je hond hem negeert
+</div>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Veskana"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 782.6 132" role="img">
+<title>Veskana</title>
+<g transform="translate(-42.312030207253805,-11.715976331360947) scale(1.5621)"><path d="M31.55,45.00 C36.18,35.56 40.70,25.11 44.00,16.00 C48.10,4.67 51.90,4.67 56.00,16.00 C59.30,25.11 63.82,35.56 68.45,45.00 Z" fill="#2F8F9D"/><path d="M27.09,53.71 A26,26 0 1 0 72.91,53.71 Z" fill="#1F3A44"/></g>
+<g transform="translate(127.59,16.0) scale(1.0)" fill="#1F3A44">
+<g transform="translate(0,0)">
+<path d="M0,0 L14,0 L36,75.9 L58,0 L72,0 L43,100 L29,100 Z"/>
+</g>
+<g transform="translate(88,0)">
+<path d="M0,0 L62,0 L62,14 L14,14 L14,43 L54,43 L54,57 L14,57 L14,86 L62,86 L62,100 L0,100 Z"/>
+</g>
+<g transform="translate(184,0)">
+<path d="M63,22 C58,11 48,7 36,7 C22,7 8,14 8,27 C8,39 19,44 36,49 C53,54 64,60 64,73 C64,86 50,93 36,93 C24,93 14,89 9,79" fill="none" stroke="#1F3A44" stroke-width="14" stroke-linecap="butt"/>
+</g>
+<g transform="translate(283,0)">
+<path d="M0,0 L14,0 L14,100 L0,100 Z"/>
+<path d="M52,0 L72,0 L14,58 L14,38 Z"/>
+<path d="M14,42 L14,62 L52,100 L72,100 Z"/>
+</g>
+<g transform="translate(389,0)">
+<path d="M0,100 L14,100 L36,24.1 L58,100 L72,100 L43,0 L29,0 Z"/>
+<path d="M18,62 L54,62 L54,76 L18,76 Z"/>
+</g>
+<g transform="translate(489,0)">
+<path d="M0,0 L14,0 L14,100 L0,100 Z"/>
+<path d="M50,0 L64,0 L64,100 L50,100 Z"/>
+<path d="M0,0 L14,0 L64,74.8 L64,100 L50,100 L0,25.2 Z"/>
+</g>
+<g transform="translate(583,0)">
+<path d="M0,100 L14,100 L36,24.1 L58,100 L72,100 L43,0 L29,0 Z"/>
+<path d="M18,62 L54,62 L54,76 L18,76 Z"/>
+</g>
+</g>
+</svg></a>
+    <nav class="navlinks">
+      <a href="#waarom">Waarom hij stukging</a>
+      <a href="#fix">De fix</a>
+      <a href="#filters">Filters</a>
+      <a href="#garantie">Garantie</a>
+    </nav>
+    <a class="btn sm" href="#aanbod">Bestellen</a>
+  </div>
+</header>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+
+    <div class="gallery">
+      <div class="shot"><svg viewBox="0 0 420 560" role="img" aria-label="Veskana roestvrijstalen drinkfontein met gebogen kraan en peilvenster">
+<defs>
+  <linearGradient id="vk-body" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#8E9AA0"/><stop offset=".10" stop-color="#C3CBCF"/>
+    <stop offset=".26" stop-color="#FFFFFF"/><stop offset=".45" stop-color="#D7DDDF"/>
+    <stop offset=".62" stop-color="#EDF1F2"/><stop offset=".82" stop-color="#A9B3B8"/>
+    <stop offset="1" stop-color="#7E8A90"/>
+  </linearGradient>
+  <linearGradient id="vk-rim" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#9FAAB0"/><stop offset=".3" stop-color="#F4F7F8"/>
+    <stop offset=".6" stop-color="#C6CED2"/><stop offset="1" stop-color="#8B969C"/>
+  </linearGradient>
+  <linearGradient id="vk-pipe" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#EFF3F4"/><stop offset=".5" stop-color="#B6C0C5"/><stop offset="1" stop-color="#8D989E"/>
+  </linearGradient>
+  <linearGradient id="vk-water" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#7FC3CC"/><stop offset="1" stop-color="#2F8F9D"/>
+  </linearGradient>
+  <radialGradient id="vk-surface" cx=".5" cy=".4" r=".7">
+    <stop offset="0" stop-color="#9AD3DA"/><stop offset="1" stop-color="#3E98A5"/>
+  </radialGradient>
+</defs>
+
+<ellipse cx="210" cy="512" rx="152" ry="20" fill="#1F3A44" opacity=".10"/>
+
+<!-- romp -->
+<path d="M70,300 V470 C70,492 133,504 210,504 C287,504 350,492 350,470 V300 Z" fill="url(#vk-body)"/>
+<path d="M70,462 C70,484 133,496 210,496 C287,496 350,484 350,462 V470 C350,492 287,504 210,504 C133,504 70,492 70,470 Z" fill="#6F7B81" opacity=".35"/>
+
+<!-- rand en wateroppervlak -->
+<ellipse cx="210" cy="300" rx="140" ry="34" fill="url(#vk-rim)"/>
+<ellipse cx="210" cy="302" rx="124" ry="27" fill="url(#vk-surface)"/>
+<ellipse cx="210" cy="302" rx="124" ry="27" fill="none" stroke="#6F7B81" opacity=".35"/>
+<ellipse cx="196" cy="300" rx="52" ry="11" fill="#FFFFFF" opacity=".28"/>
+<ellipse cx="214" cy="308" rx="78" ry="15" fill="none" stroke="#FFFFFF" stroke-width="2" opacity=".35"/>
+
+<!-- kraan -->
+<path d="M300,296 V168 C300,126 266,104 230,104 C198,104 186,128 186,152"
+      fill="none" stroke="url(#vk-pipe)" stroke-width="21" stroke-linecap="round"/>
+<path d="M300,296 V168 C300,126 266,104 230,104 C198,104 186,128 186,152"
+      fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" opacity=".55"
+      transform="translate(-5,-1)"/>
+<rect x="173" y="146" width="26" height="15" rx="5" fill="url(#vk-rim)"/>
+<ellipse cx="300" cy="296" rx="13" ry="6" fill="#98A3A9"/>
+
+<!-- waterstraal -->
+<path d="M186,162 C182,196 190,214 186,240 C182,264 189,278 186,294"
+      fill="none" stroke="url(#vk-water)" stroke-width="8" stroke-linecap="round" opacity=".75"/>
+<path d="M186,166 C183,196 190,212 186,238" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" opacity=".55"/>
+<ellipse cx="186" cy="296" rx="26" ry="7" fill="#FFFFFF" opacity=".45"/>
+<circle cx="205" cy="286" r="3" fill="#FFFFFF" opacity=".6"/>
+<circle cx="168" cy="278" r="2.4" fill="#FFFFFF" opacity=".5"/>
+
+<!-- peilvenster -->
+<rect x="104" y="352" width="40" height="96" rx="20" fill="#5E6A70"/>
+<rect x="109" y="357" width="30" height="86" rx="15" fill="#2A3B43"/>
+<path d="M109,392 h30 v36 a15,15 0 0 1 -15,15 a15,15 0 0 1 -15,-15 Z" fill="url(#vk-water)"/>
+<rect x="116" y="366" width="7" height="62" rx="3.5" fill="#FFFFFF" opacity=".22"/>
+
+<!-- rvs-glans -->
+<path d="M262,312 C262,400 262,440 262,468" stroke="#FFFFFF" stroke-width="10" opacity=".22" stroke-linecap="round"/>
+<path d="M96,316 C96,392 96,432 96,462" stroke="#FFFFFF" stroke-width="5" opacity=".14" stroke-linecap="round"/>
+</svg></div>
+      <div class="thumbs">
+        <div class="thumb">Foto 2<br>pomp in de hand</div>
+        <div class="thumb">Foto 3<br>3 delen los</div>
+        <div class="thumb">Foto 4<br>filter van binnen</div>
+        <div class="thumb">Video<br>teardown</div>
+      </div>
+    </div>
+
+    <div>
+      <div class="badge">Belgisch merk · voorraad in de EU</div>
+      <h1>Je vorige fontein ging niet stuk. Hij at zijn eigen pomp op.</h1>
+      <p class="lead">De filter zat op de verkeerde plek. Niet bij dat ene merk: bij bijna elke fontein die je kan kopen.
+        Veskana draait de volgorde om.</p>
+
+      <p class="kicker">Veskana <span class="ph" title="CHECK: maat">[4]</span> · roestvrijstalen drinkfontein ·
+        <span class="ph" title="CHECK: inhoud">[x]</span> liter</p>
+
+      <div class="pricerow">
+        <div class="price">€69,69 <small>incl. btw</small></div>
+        <div style="font-size:.92rem;color:var(--muted)">Filters: €<span class="ph" title="BESLISSEN: filterprijs per 3">[X]</span> per 3. Nu al te zien, niet straks pas.</div>
+      </div>
+
+      <ul class="usp">
+        <li><b>De filter gaat eerst. Dan de pomp.</b> <span class="ph" title="CHECK bij leverancier: passeert het water het filtermedium vóór de pompkamer? Zonder schriftelijke bevestiging mag deze regel niet live.">[bevestigen bij leverancier]</span></li>
+        <li><b>De pomp haal je er met je vingers uit</b> en koop je los voor €<span class="ph" title="BESLISSEN: losse pompprijs">[Y]</span>. Geen gereedschap, geen weggooiproduct.</li>
+        <li><b><span class="ph" title="CHECK: staalsoort">304</span> roestvrij staal, <span class="ph" title="CHECK: aantal delen">3</span> delen, vaatwasser.</b> Geen hoekjes waar je niet bij kan.</li>
+        <li><b>Droogloopstop.</b> <span class="ph" title="CHECK: heeft dit toestel een droogloopbeveiliging?">[bevestigen]</span> Hij slaat af in plaats van door te branden terwijl jij elf uur weg bent.</li>
+      </ul>
+
+      <div class="packhead">Kies je pakket</div>
+      <div class="packs" id="packs">
+        <label class="pack">
+          <input type="radio" name="pakket" value="Alleen de fontein" data-price="69,69" data-note="1 filter inbegrepen">
+          <div class="row">
+            <div style="display:flex;gap:12px"><span class="dot"></span>
+              <div><div class="name">Alleen de fontein</div><div class="desc">fontein + 1 filter</div></div></div>
+            <div class="amt">€69,69</div>
+          </div>
+        </label>
+        <label class="pack">
+          <input type="radio" name="pakket" value="Startpakket" data-price="[89]" data-note="3 maanden filters + borstel" checked>
+          <div class="row">
+            <div style="display:flex;gap:12px"><span class="dot"></span>
+              <div><div class="name">Startpakket <span class="tag">meest gekozen <span class="ph" title="BESLISSEN: pas labelen als je eigen cijfers dat zeggen">?</span></span></div>
+                <div class="desc">fontein + 3 filters + reinigingsborstel + reservepomp <span class="ph" title="BESLISSEN: reservepomp erbij of niet">?</span></div></div></div>
+            <div class="amt">€<span class="ph" title="BESLISSEN: pakketprijs tegen landed cost">89</span><span class="per">los €<span class="ph">[109]</span></span></div>
+          </div>
+        </label>
+        <label class="pack">
+          <input type="radio" name="pakket" value="Twee fonteinen" data-price="[129]" data-note="boven en beneden, of twee honden">
+          <div class="row">
+            <div style="display:flex;gap:12px"><span class="dot"></span>
+              <div><div class="name">Twee fonteinen</div><div class="desc">2 fonteinen + 6 filters. Twee honden, of één boven en één beneden.</div></div></div>
+            <div class="amt">€<span class="ph" title="BESLISSEN">129</span><span class="per">€<span class="ph">64,50</span> per stuk</span></div>
+          </div>
+        </label>
+      </div>
+
+      <a class="btn" href="#" id="buy">IN MIJN WINKELMAND →</a>
+      <div class="trio">100 dagen geld terug · Verzonden uit <span class="ph">België</span> ·
+        <span class="ph ph-echt" title="ECHT: telefoonnummer waar een mens opneemt">+32 …</span> neemt op</div>
+
+      <div class="ship">
+        <div><b>Levering:</b> België <span class="ph ph-echt" title="ECHT: cijfers van je fulfilmentpartner">[x]</span> werkdagen ·
+          Nederland <span class="ph ph-echt">[x-y]</span> · Duitsland <span class="ph ph-echt">[x-y]</span>. Geen douane.</div>
+        <div><b>Betalen:</b> Bancontact · iDEAL · Visa · Mastercard · PayPal · <span class="ph" title="CHECK">Klarna</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="trust">
+  <div class="wrap">
+    <ul>
+      <li>Belgisch bedrijf, <span class="ph ph-echt" title="ECHT: bedrijfsgegevens">[naam + BE 0xxx.xxx.xxx]</span></li>
+      <li>Voorraad en retouradres in <span class="ph">België</span></li>
+      <li>Filters en pomp los te koop, prijs staat op deze pagina</li>
+      <li>100 dagen geld terug, ook gebruikt</li>
+      <li>14 dagen wettelijke bedenktijd, apart van die 100 dagen</li>
+      <li>Support in het Nederlands: <span class="ph ph-echt">+32 …</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- ===================== 1. HERKENNING ===================== -->
+<section>
+  <div class="wrap narrow">
+    <p class="eyebrow">Eerst even dit</p>
+    <h2>Je weet allang dat er iets niet klopt. Daarom lees je dit.</h2>
+    <p>De bak is 's avonds nog vol. Hij loopt eraan voorbij en drinkt buiten uit een plas. Je hebt water door het voer
+      gemengd, bouillon geprobeerd, een tweede bak gezet. We gaan je niet uitleggen dat je hond moet drinken. Dat weet je,
+      en je weet het al maanden.</p>
+    <div class="quotes c2">
+      <blockquote><p>"Onze Basco drinkt niet uit zijn drinkbak. Elke dag vers water erin, maar nee hoor, zogauw hij buiten is drink hij uit de sloot, plasjes, emmer, gieter, bakjes met regenwater etc."</p><cite>hondenpage.com</cite></blockquote>
+      <blockquote><p>"Als baasje heb je de morele verplichting er alles aan te doen."</p><cite>hondenpage.com</cite></blockquote>
+    </div>
+    <p>Het punt van deze pagina is een ander. Je hebt misschien al een fontein gekocht. Misschien twee. En die ging stuk.
+      <b>Dit gaat over waarom.</b></p>
+  </div>
+</section>
+
+<!-- ===================== 2. NIET JOUW SCHULD ===================== -->
+<section class="sage">
+  <div class="wrap">
+    <div style="display:grid;gap:34px" class="hero-grid">
+      <div>
+        <p class="eyebrow">Wat je al lang vermoedt</p>
+        <h2>De film komt terug, hoe vaak je ook poetst. Dat lag nooit aan jou.</h2>
+        <p>Je spoelt de bak elke ochtend om en tegen de avond voelt de rand weer glad. Dat is geen vuil dat je hebt laten
+          zitten, het is biofilm: speeksel, voerresten en bacteriën die in stilstaand water opnieuw aangroeien.</p>
+        <p>Onderzoekers van Hartpury University volgden veertien dagen lang de drinkbakken van honden. In plastic,
+          keramiek én roestvrij staal stegen de bacterieaantallen na zeven dagen significant. Het materiaal bepaalt wélke
+          bacteriën groeien, niet óf ze groeien.</p>
+        <p style="font-size:.85rem;color:var(--muted)">Wright &amp; Carroll, Hartpury University, 2018</p>
+      </div>
+      <div class="quotes">
+        <blockquote><p>"Zwar wurde diese jeden Tag gereinigt, aber nach einen kurzen Zeit sammelt sich nun Mal ein Film."<br>
+          <span style="font-style:normal;font-size:.86rem;color:var(--muted)">Ze werd elke dag gereinigd, maar na korte tijd hoopt zich nu eenmaal een film op.</span></p><cite>otto.de (vertaald)</cite></blockquote>
+        <blockquote><p>"Egal ob ich ihn jeden Tag wasche… wie Moos schaut es aus und man bekommt es einfach nicht raus weil man es nicht mal aufmachen kann."<br>
+          <span style="font-style:normal;font-size:.86rem;color:var(--muted)">Het maakt niet uit of ik hem elke dag was… het ziet eruit als mos en je krijgt het er niet uit, want je kan hem niet eens openmaken.</span></p><cite>otto.de (vertaald)</cite></blockquote>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 3. DE HINGE: DE SPLEET ===================== -->
+<section class="deep" id="waarom">
+  <div class="wrap">
+    <p class="eyebrow">Waarom hij écht stierf</p>
+    <h2>Eerst werd hij luider. Toen zwakker. Toen was hij dood.</h2>
+    <p class="lead narrow">Je hebt het geweten aan het merk, aan het plastic, of aan China. Het was geen van de drie.
+      Het was de volgorde.</p>
+
+    <div class="narrow" style="margin-top:26px">
+      <p>Een machine begeeft het op de plek die het vuil ontvangt, niet op de plek die vuil <i>lijkt</i>. Bij bijna elke
+        fontein zit er een spleet, achteraan of onder het rooster, waar haar, stof, speeksel en voerresten rechtstreeks in
+        de pompkamer vallen. Langs de filter. De filter staat er wel, maar hij staat <b>achter</b> de pomp.</p>
+      <p>Daarom poetste je de bak en veranderde er niets: het probleem zat niet in de bak.</p>
+    </div>
+
+    <div class="diagram">
+      <svg viewBox="0 0 880 380" role="img" aria-label="Vergelijking: bij gewone fonteinen bereikt het water de pomp voor de filter, bij Veskana omgekeerd">
+        <defs>
+          <marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+            <path d="M0,0 L10,5 L0,10 z" fill="#6FC3CE"/>
+          </marker>
+          <marker id="ahw" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+            <path d="M0,0 L10,5 L0,10 z" fill="#B7CFA9"/>
+          </marker>
+        </defs>
+        <g font-family="system-ui,-apple-system,sans-serif">
+
+        <!-- ---------- PANEEL A ---------- -->
+        <g transform="translate(0,0)">
+          <text x="20" y="26" fill="#fff" font-size="17" font-weight="700">Bijna elke fontein</text>
+          <text x="20" y="48" fill="#9FBCC2" font-size="13">de filter staat achter de pomp</text>
+
+          <path d="M20,90 H380 V270 Q380,300 350,300 H50 Q20,300 20,270 Z" fill="rgba(47,143,157,.14)" stroke="#9FBCC2" stroke-width="2"/>
+          <path d="M20,140 H380" stroke="#2F8F9D" stroke-width="2" opacity=".6"/>
+          <!-- rooster met spleet -->
+          <path d="M262,90 H306 M330,90 H378" stroke="#E9F1F2" stroke-width="6" stroke-linecap="round"/>
+          <text x="318" y="72" fill="#E8B96A" font-size="12" font-weight="700" text-anchor="middle">de spleet</text>
+          <path d="M318,78 V88" stroke="#E8B96A" stroke-width="2"/>
+          <!-- vuil valt door -->
+          <circle cx="317" cy="112" r="4" fill="#E8B96A"/><circle cx="322" cy="150" r="3.4" fill="#E8B96A"/>
+          <circle cx="315" cy="188" r="4.2" fill="#E8B96A"/><circle cx="321" cy="222" r="3" fill="#E8B96A"/>
+          <!-- pompkamer, open -->
+          <rect x="288" y="236" width="80" height="52" rx="9" fill="#12262E" stroke="#E8B96A" stroke-width="2" stroke-dasharray="6 5"/>
+          <text x="328" y="267" fill="#fff" font-size="13" font-weight="700" text-anchor="middle">pomp</text>
+          <!-- filter, stroomafwaarts -->
+          <rect x="44" y="176" width="78" height="82" rx="9" fill="#7A9E7E" opacity=".85"/>
+          <path d="M56,198 H110 M56,216 H110 M56,234 H110" stroke="#1F3A44" stroke-width="3" opacity=".45"/>
+          <text x="83" y="276" fill="#B7CFA9" font-size="13" font-weight="700" text-anchor="middle">filter</text>
+          <!-- stroming: pomp eerst, filter daarna -->
+          <path d="M284,262 H140" stroke="#6FC3CE" stroke-width="2.5" fill="none" marker-end="url(#ah)"/>
+          <text x="212" y="252" fill="#6FC3CE" font-size="12" text-anchor="middle">daarna pas</text>
+          <text x="200" y="336" fill="#C3D5D9" font-size="13.5" text-anchor="middle">Het vuil bereikt de pomp</text>
+          <text x="200" y="356" fill="#C3D5D9" font-size="13.5" text-anchor="middle">vóór het de filter ziet.</text>
+        </g>
+
+        <!-- ---------- PANEEL B ---------- -->
+        <g transform="translate(480,0)">
+          <text x="20" y="26" fill="#fff" font-size="17" font-weight="700">Veskana</text>
+          <text x="20" y="48" fill="#B7CFA9" font-size="13">de filter staat vóór de pomp</text>
+
+          <path d="M20,90 H380 V270 Q380,300 350,300 H50 Q20,300 20,270 Z" fill="rgba(47,143,157,.14)" stroke="#9FBCC2" stroke-width="2"/>
+          <path d="M20,140 H380" stroke="#2F8F9D" stroke-width="2" opacity=".6"/>
+          <!-- dichte instroom door filtermedium -->
+          <rect x="286" y="96" width="84" height="94" rx="9" fill="#7A9E7E" opacity=".9"/>
+          <path d="M298,120 H358 M298,140 H358 M298,160 H358" stroke="#1F3A44" stroke-width="3" opacity=".45"/>
+          <text x="328" y="82" fill="#B7CFA9" font-size="13" font-weight="700" text-anchor="middle">filter</text>
+          <!-- vuil blijft boven liggen -->
+          <circle cx="300" cy="108" r="4" fill="#E8B96A"/><circle cx="320" cy="104" r="3.2" fill="#E8B96A"/>
+          <circle cx="345" cy="109" r="3.6" fill="#E8B96A"/>
+          <!-- gesloten pompkamer -->
+          <rect x="288" y="212" width="80" height="76" rx="9" fill="#12262E" stroke="#B7CFA9" stroke-width="2.5"/>
+          <text x="328" y="244" fill="#fff" font-size="13" font-weight="700" text-anchor="middle">pomp</text>
+          <text x="328" y="264" fill="#B7CFA9" font-size="11.5" text-anchor="middle">gesloten</text>
+          <!-- stroming: filter, dan pomp, dan omhoog -->
+          <path d="M328,192 V206" stroke="#B7CFA9" stroke-width="2.5" marker-end="url(#ahw)"/>
+          <path d="M284,250 H140" stroke="#6FC3CE" stroke-width="2.5" fill="none" marker-end="url(#ah)"/>
+          <text x="212" y="240" fill="#6FC3CE" font-size="12" text-anchor="middle">schoon water</text>
+          <text x="200" y="336" fill="#C3D5D9" font-size="13.5" text-anchor="middle">Het medium zit vóór de kamer.</text>
+          <text x="200" y="356" fill="#C3D5D9" font-size="13.5" text-anchor="middle">De pomp krijgt alleen water.</text>
+        </g>
+        </g>
+      </svg>
+    </div>
+
+    <h3 style="margin-top:44px">Wat er daarna gebeurt, elke keer in dezelfde volgorde</h3>
+    <ol class="steps">
+      <li><b>De rotor slibt dicht</b><span>Biofilm groeit op de plek waar je niet bij kan, en de doorstroom zakt.</span></li>
+      <li><b>Hij wordt luider</b><span>En luider naarmate het peil zakt. "de fontein begon al herrie te maken als het waterniveau van vol ook maar 2 cm gezakt was."</span></li>
+      <li><b>Jij poetst de bak vaker</b><span>Wat niets verandert, want het zit niet in de bak.</span></li>
+      <li><b>Ergens tussen week twee en maand zeven is hij dood</b><span>En als hij droogloopt terwijl je weg bent, staat je vloer onder water.</span></li>
+    </ol>
+
+    <div class="quotes c2" style="margin-top:30px">
+      <blockquote><p>"The fountain is designed with a gap at the back that lets hair and debris fall right into the chamber with the pump, bypassing the filter. Pump clogs every day and has to be cleaned. I contacted the manufacturer who sent a new pump, same issue."</p><cite>Julia, Ierland · zooplus.com · de enige koper in ons hele onderzoek die het zelf uitzocht</cite></blockquote>
+      <blockquote><p>"Pompje deed het niet meer. Raster eraf gehaald, zat roze aanslag in. Na borstelen deed hij het grotendeels weer."</p><cite>zooplus.nl</cite></blockquote>
+      <blockquote><p>"Ondanks wekelijks schoonmaken en het filter vervangen is de pomp er echter na 7 maanden mee gestopt… ik vermoed dat het pompje niet meer werkt door slijm/biofilm. Weken in azijn heeft helaas ook niet geholpen."</p><cite>zooplus.nl</cite></blockquote>
+      <blockquote><p>"Die Pumpen sind anfällig und innerhalb von ein paar Tagen voll mit Algen und Kalk."<br><span style="font-style:normal;font-size:.86rem">De pompen zijn kwetsbaar en binnen een paar dagen vol algen en kalk.</span></p><cite>DogForum.de (vertaald)</cite></blockquote>
+    </div>
+
+    <div class="narrow" style="margin-top:34px">
+      <h3>Je kent dit principe al</h3>
+      <p>Een motor stuurt olie eerst door een filter en dán door de motor. Zet dat filter erachter en de motor loopt vast.
+        Je zou die auto nooit kopen. Die fontein heb je drie keer gekocht.</p>
+      <p><b>Je was niet dom. Je hebt drie keer hetzelfde ontwerp gekocht.</b></p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 4. DE FIX ===================== -->
+<section id="fix">
+  <div class="wrap">
+    <p class="eyebrow">De fix</p>
+    <h2>De filter gaat eerst. Dan de pomp.</h2>
+    <p class="lead narrow">Eén zin. Als je hem kan navertellen, snap je het hele product.</p>
+
+    <div class="gate">
+      <b>Poort vóór livegang.</b> Alle drie de blokken hieronder mogen pas online zodra de leverancier schriftelijk én op
+      video bevestigt: (a) passeert het water het filtermedium vóór de pompkamer, (b) is die kamer afgesloten van de bak,
+      (c) is de pomp zonder gereedschap vervangbaar, (d) is er een droogloopstop, (e) drie jaar onderdelenvoorraad in de
+      EU. Is het antwoord op (a) nee, dan schrap je deze sectie en draagt de pagina op de filterprijs, de garantie en het
+      Belgische adres. Dat verslaat de concurrentie nog steeds op de top drie van bezwaren, maar zonder mechanisme.
+    </div>
+
+    <div class="tiles">
+      <div class="tile">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M3 5h18M6 5v4l5 5v6l2-1v-5l5-5V5"/></svg></div>
+        <h3>Vóórfiltratie</h3>
+        <p>Het water gaat door het medium voordat het de pompkamer in gaat. De pomp krijgt water dat al gefilterd is,
+          niet het water dat nog gefilterd moet worden. <span class="ph" title="CHECK">[bevestigen]</span></p>
+      </div>
+      <div class="tile">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 1 0-5.4 5.4L4 17v3h3l5.3-5.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.1-2.1z"/></svg></div>
+        <h3>Pomp eruit met je vingers</h3>
+        <p>De kamer gaat open zonder schroevendraaier, de pomp komt eruit, en je koopt hem los voor
+          €<span class="ph" title="BESLISSEN">[Y]</span>. Een versleten onderdeel is geen reden voor een nieuwe fontein.</p>
+      </div>
+      <div class="tile">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 3s6 5.7 6 10a6 6 0 0 1-12 0c0-4.3 6-10 6-10z"/><path d="M4 4l16 16"/></svg></div>
+        <h3>Droogloopstop</h3>
+        <p>Staat het peil te laag, dan slaat de pomp af in plaats van door te branden. Dat is de beveiliging voor de dag
+          dat je elf uur weg bent. <span class="ph" title="CHECK">[bevestigen]</span></p>
+      </div>
+    </div>
+
+    <div class="shot" style="margin-top:26px;min-height:240px;background:var(--white);border-style:dashed">
+      <div style="text-align:center;color:var(--muted);font-size:.9rem;padding:40px 20px">
+        <b style="display:block;color:var(--ink);margin-bottom:6px;font-size:1.05rem">Video: de teardown</b>
+        Drie dode fonteinen van andere merken, op een keukentafel opengemaakt. De film op de rotor, het haar om de as,
+        de spleet achteraan. Negen seconden, ongeknipt, één namiddag werk.<br>
+        <span style="font-size:.84rem">Dit is tegelijk je beste advertentie en het enige dat het bezwaar "is dit niet gewoon dezelfde fabrieksfontein met jullie logo" kapotmaakt.</span>
+      </div>
+    </div>
+
+    <div class="cta-block center">
+      <a class="btn" href="#aanbod">IN MIJN WINKELMAND →</a>
+      <div class="trio">100 dagen geld terug · Verzonden uit <span class="ph">België</span> · <span class="ph ph-echt">+32 …</span> neemt op</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 5. SPECS ===================== -->
+<section class="white">
+  <div class="wrap">
+    <p class="eyebrow">Wat je in huis haalt</p>
+    <h2>Zes dingen die je dagelijks merkt</h2>
+    <p class="lead narrow">Alleen gemeten of bij de leverancier gecheckte specs. Een tegel zonder cijfer wordt geschrapt,
+      niet ingevuld.</p>
+    <div class="tiles">
+      <div class="tile"><h3><span class="ph" title="CHECK: inhoud">[x]</span> liter</h3><p><span class="ph" title="METEN">[x]</span> dagen zonder bijvullen bij een hond van <span class="ph">[y]</span> kg. Het peilvenster aan de zijkant zegt je wanneer.</p></div>
+      <div class="tile"><h3><span class="ph" title="METEN: dB op één meter, bij laag waterpeil">[xx]</span> dB</h3><p>Gemeten op één meter <b>bij laag waterpeil</b>, niet bij een volle bak. Dat is het cijfer dat telt en dat niemand anders geeft.</p></div>
+      <div class="tile"><h3><span class="ph">304</span> roestvrij staal</h3><p>Geen plastic tegen zijn snuit, geen krasjes waar biofilm in kruipt. <span class="ph" title="CHECK">[3]</span> delen, vaatwasserbestendig.</p></div>
+      <div class="tile"><h3>Vijf minuten schoon</h3><p>Zonder gereedschap uit elkaar, geen hoekjes waar je niet bij kan. Eén keer per week. Borstel zit in het startpakket.</p></div>
+      <div class="tile"><h3>Snoer met bijtmantel</h3><p><span class="ph" title="CHECK: heeft dit model een beschermde kabel?">[bevestigen]</span> Voor de hond die alles wat beweegt eerst test met zijn tanden.</p></div>
+      <div class="tile"><h3>Filter <span class="ph" title="CHECK: interval">[elke x weken]</span></h3><p>Ziet hij er eerder vies uit, dan eerder. Jij beslist wanneer, niet een abonnement.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 6. FILTERS ===================== -->
+<section class="sage" id="filters">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <p class="eyebrow">Wat het je daarna kost</p>
+        <h2>Hier is de filterprijs. Vóór je koopt, niet erna.</h2>
+        <p>Eén koper noemde de categorie ooit het <b>inkjetprintermodel</b>: het apparaat is goedkoop, de cartridges
+          maken je arm, en opzeggen kan je nergens vinden. Hij had gelijk, en daarom staat onze prijslijst gewoon hier.</p>
+        <p>Geen abonnement nodig. Wil je het toch gemakkelijk, dan zet je Veskana Refill aan: die staat standaard uit en
+          stopt met één klik in je account, zonder mail te moeten sturen.</p>
+        <p style="font-size:.9rem;color:var(--muted)">De twee bezwaren die de hele categorie weigert te beantwoorden zijn
+          "de filters zijn de echte prijs" en "over een jaar bestaan ze niet meer". Dit is het antwoord op allebei.</p>
+      </div>
+      <div class="tablewrap" style="align-self:start">
+        <table>
+          <thead><tr><th>Onderdeel</th><th>Prijs</th><th>Voorraad</th></tr></thead>
+          <tbody>
+            <tr><td><b>Filters, 3 stuks</b><br><span style="color:var(--muted);font-size:.86rem"><span class="ph">[3 maanden]</span></span></td><td>€<span class="ph" title="BESLISSEN">[X]</span></td><td><span class="ph">EU</span></td></tr>
+            <tr><td><b>Pomp</b><br><span style="color:var(--muted);font-size:.86rem">zelf te vervangen</span></td><td>€<span class="ph" title="BESLISSEN">[Y]</span></td><td><span class="ph">EU</span></td></tr>
+            <tr><td><b>Reinigingsborstel</b></td><td>€<span class="ph" title="BESLISSEN">[Z]</span></td><td><span class="ph">EU</span></td></tr>
+            <tr><td><b>Onderdelen beschikbaar</b></td><td colspan="2"><span class="ph" title="BESLISSEN: durf je drie jaar te beloven?">[3]</span> jaar, zwart op wit</td></tr>
+            <tr><td><b>Veskana Refill</b></td><td colspan="2">optioneel · staat standaard uit · stoppen in één klik</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 7. VERGELIJKING ===================== -->
+<section>
+  <div class="wrap">
+    <h2>Veskana tegenover de fontein die je al had</h2>
+    <p class="lead narrow">Rij één is de rij die alles verklaart.</p>
+    <div class="tablewrap" style="margin-top:26px">
+      <table>
+        <thead><tr><th></th><th>De doorsneefontein</th><th class="col-v">Veskana</th></tr></thead>
+        <tbody>
+          <tr class="hinge"><td><b>Waar staat de filter</b></td><td>achter de pomp</td><td class="col-v">vóór de pomp <span class="ph" title="CHECK">[bevestigen]</span></td></tr>
+          <tr><td><b>Wat de pomp binnenkrijgt</b></td><td>haar, speeksel, voerresten</td><td class="col-v">gefilterd water</td></tr>
+          <tr><td><b>Pomp vervangen</b></td><td>niet te openen, dus nieuw toestel</td><td class="col-v">met je vingers, €<span class="ph">[Y]</span></td></tr>
+          <tr><td><b>Filterprijs</b></td><td>zie je pas na de aankoop</td><td class="col-v">staat op deze pagina</td></tr>
+          <tr><td><b>Abonnement</b></td><td>vaak standaard aan, opzeggen is zoeken</td><td class="col-v">standaard uit, één klik weg</td></tr>
+          <tr><td><b>Droogloop</b></td><td>brandt door, soms met vloerschade</td><td class="col-v">slaat af <span class="ph" title="CHECK">[bevestigen]</span></td></tr>
+          <tr><td><b>Als er iets misgaat</b></td><td>formulierantwoord, geen telefoon</td><td class="col-v">Belgisch adres, <span class="ph ph-echt">+32 …</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 8. GARANTIE ===================== -->
+<section class="white" id="garantie">
+  <div class="wrap guarantee">
+    <div class="seal"><b>100</b><span>dagen<br>geld terug</span></div>
+    <div>
+      <h2>100 dagen. Ook als je hond hem niet wil.</h2>
+      <p>Drinkt hij er niet uit, bevalt het geluid je niet, past hij niet in je keuken: je stuurt hem terug naar ons adres
+        in België en je krijgt het volledige bedrag terug. Ook gebruikt. Ook zonder doos.
+        <span class="ph" title="BESLISSEN: retourkosten voor jou of voor de klant">[retourkosten]</span></p>
+      <p><b>Tip die vaak helpt:</b> zet hem de eerste dagen naast de oude bak en haal die pas weg als hij uit de fontein
+        drinkt. Sommige honden hebben twee dagen nodig.</p>
+      <p><b>Los daarvan:</b> je wettelijke garantie geldt altijd, en je hebt 14 dagen bedenktijd. Die staan los van deze
+        100 dagen en geen enkele commerciële belofte vervangt ze.</p>
+      <p style="font-size:.93rem;color:var(--muted)">De pijnlijkste reviews in ons onderzoek gingen niet over een kapot
+        product. Ze gingen over een retour die niet lukte: "they respond with a form letter and no answer how to return
+        it", "no phone number or real person to contact". Daarom staat er hier een adres en een nummer.</p>
+      <div class="cta-block">
+        <a class="btn" href="#aanbod" style="max-width:420px">IN MIJN WINKELMAND →</a>
+        <div class="trio" style="text-align:left;max-width:420px">100 dagen geld terug · Verzonden uit <span class="ph">België</span> · <span class="ph ph-echt">+32 …</span> neemt op</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 9. REVIEWS ===================== -->
+<section>
+  <div class="wrap">
+    <h2>Wat baasjes na een maand zeggen</h2>
+    <div class="gate" style="margin-top:20px">
+      <b>Reviewwidget, verborgen tot de eerste echte reviews binnen zijn.</b> Judge.me of Loox, in het Nederlands, het
+      échte aantal, sorteren op recent, geen filtering van 1 en 2 sterren. Vraag ze op dag 14 per mail. Toon het echte
+      getal, ook als het er veertig zijn: een verzonnen aantal is precies waar deze koper op jaagt.
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 10. AANBOD ===================== -->
+<section class="sage" id="aanbod">
+  <div class="wrap narrow">
+    <p class="eyebrow">Het aanbod</p>
+    <h2>Kies je Veskana</h2>
+
+    <div class="packs" style="margin-top:24px">
+      <label class="pack">
+        <input type="radio" name="pakket2" value="Alleen de fontein" data-price="69,69">
+        <div class="row"><div style="display:flex;gap:12px"><span class="dot"></span>
+          <div><div class="name">Alleen de fontein</div><div class="desc">fontein + 1 filter</div></div></div>
+          <div class="amt">€69,69</div></div>
+      </label>
+      <label class="pack">
+        <input type="radio" name="pakket2" value="Startpakket" data-price="[89]" checked>
+        <div class="row"><div style="display:flex;gap:12px"><span class="dot"></span>
+          <div><div class="name">Startpakket <span class="tag">meest gekozen</span></div>
+            <div class="desc">fontein + 3 filters + borstel + reservepomp <span class="ph">?</span> + 100 dagen</div></div></div>
+          <div class="amt">€<span class="ph">89</span><span class="per">los €<span class="ph">[109]</span></span></div></div>
+      </label>
+      <label class="pack">
+        <input type="radio" name="pakket2" value="Twee fonteinen" data-price="[129]">
+        <div class="row"><div style="display:flex;gap:12px"><span class="dot"></span>
+          <div><div class="name">Twee fonteinen</div><div class="desc">2 fonteinen + 6 filters</div></div></div>
+          <div class="amt">€<span class="ph">129</span><span class="per">€<span class="ph">64,50</span> per stuk</span></div></div>
+      </label>
+    </div>
+
+    <h3 style="margin-top:38px">Wat er in het startpakket zit, en wat het los kost</h3>
+    <div class="tablewrap">
+      <table style="min-width:420px">
+        <tbody>
+          <tr><td>Veskana fontein, roestvrij staal</td><td style="text-align:right">€69,69</td></tr>
+          <tr><td>3 filters, <span class="ph">[3 maanden]</span> vers water</td><td style="text-align:right">los €<span class="ph">[X]</span></td></tr>
+          <tr><td>Reinigingsborstel</td><td style="text-align:right">los €<span class="ph">[Z]</span></td></tr>
+          <tr><td>De Veskana-gids: opstellen, wennen, schoonmaken, 2 pagina's</td><td style="text-align:right">gratis</td></tr>
+          <tr><td>100 dagen geld terug</td><td style="text-align:right">inbegrepen</td></tr>
+          <tr style="background:var(--paper)"><td><b>Samen los €<span class="ph">[109]</span></b></td><td style="text-align:right"><b>Als pakket €<span class="ph">89</span></b></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:.85rem;color:var(--muted);margin-top:12px">Elke regel is een prijs waartegen we het onderdeel
+      effectief los verkopen. Geen doorstreepte "was"-prijs op de fontein zelf: onder de Omnibus-richtlijn moet zo'n
+      anker de laagste prijs van de voorbije 30 dagen zijn, en een pakketprijs is eerlijker én sterker.</p>
+
+    <div class="cta-block center">
+      <a class="btn" href="#">IN MIJN WINKELMAND →</a>
+      <div class="trio">100 dagen geld terug · Verzonden uit <span class="ph">België</span> · <span class="ph ph-echt">+32 …</span> neemt op</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 11. FAQ ===================== -->
+<section>
+  <div class="wrap narrow">
+    <h2>Vragen die verkopen</h2>
+    <div class="faq">
+      <details open><summary>Waarom het startpakket en niet alleen de fontein?</summary><div class="answer">
+        <p>Omdat een fontein zonder filter een bak met een pomp is. Drie filters zijn <span class="ph">[drie maanden]</span>
+        vers water, de borstel is wat je anders in de keukenla zoekt, en samen kost het minder dan los. Alleen de fontein
+        kan ook; dan koop je filters wanneer je wil.</p></div></details>
+      <details><summary>Gaat deze wél langer mee dan mijn vorige?</summary><div class="answer">
+        <p>Dat hangt af van één ding: waar de filter staat. Bij jouw vorige stond hij achter de pomp, dus de pomp kreeg
+        het vuil. <span class="ph" title="CHECK: alleen zo formuleren als de leverancier het bevestigt">[Bij deze staat hij ervoor.]</span>
+        En mocht de pomp toch opgeven: die koop je los voor €<span class="ph">[Y]</span> en vervang je zonder gereedschap,
+        in plaats van een nieuwe fontein te kopen.</p></div></details>
+      <details><summary>Zit ik vast aan een filterabonnement?</summary><div class="answer">
+        <p>Nee. De filterprijs staat hierboven, je koopt ze los wanneer je wil, en Veskana Refill staat standaard uit.
+        Aanzetten kan, stoppen doe je met één klik in je account, zonder mail en zonder formulier.</p></div></details>
+      <details><summary>Bestaan die filters over twee jaar nog?</summary><div class="answer">
+        <p>We houden <span class="ph">[3]</span> jaar onderdelen op voorraad in de EU en zetten dat zwart op wit. Het is
+        precies het punt waarop de meeste merken je laten vallen: "Leider ist es jedoch nicht möglich Filter nachzukaufen"
+        staat er letterlijk in reviews van andere fonteinen.</p></div></details>
+      <details><summary>Hoe luid is hij?</summary><div class="answer">
+        <p><span class="ph" title="METEN">[xx]</span> dB op één meter, gemeten <b>bij laag waterpeil</b>. Dat is expres:
+        iedereen meet bij een volle bak, terwijl je hem juist hoort als het peil zakt. Ter vergelijking: een koelkast zit
+        rond de 40 dB.</p></div></details>
+      <details><summary>Mijn vloer is laminaat. Wat als hij lekt?</summary><div class="answer">
+        <p>Twee dingen. De droogloopstop voorkomt het scenario waarin de pomp leegloopt en doorbrandt
+        <span class="ph">[bevestigen]</span>, en als er tóch water naast staat, valt dat binnen de 100 dagen: je stuurt
+        hem terug en krijgt je geld terug.</p></div></details>
+      <details><summary>Mijn hond is kieskeurig. Wat als hij hem negeert?</summary><div class="answer">
+        <p>Zet hem naast de oude bak en haal die pas weg als hij uit de fontein drinkt. Wil hij het na 100 dagen nog
+        steeds niet, dan krijg je je geld terug. Dat staat er expliciet in: ook als de reden "hij wil niet" is.</p></div></details>
+      <details><summary>Is dit niet gewoon een Chinese fontein met jullie logo erop?</summary><div class="answer">
+        <p>Hij wordt gemaakt in <span class="ph" title="CHECK: productieland, eerlijk benoemen">[land]</span>, zoals vrijwel
+        elke fontein die je in Europa koopt, ook die van de grote merken. Het verschil zit in wat eromheen staat: de
+        filterpositie, voorraad in <span class="ph">[België]</span>, onderdelen die je los kan kopen, een pagina in je
+        eigen taal en iemand die de telefoon opneemt. En we laten je op video zien wat erin zit.</p></div></details>
+      <details><summary>Hoe maak ik hem schoon?</summary><div class="answer">
+        <p>Eén keer per week: stekker eruit, <span class="ph">[3]</span> delen uit elkaar, warm sop of vaatwasser, terug in
+        elkaar. <span class="ph" title="METEN">[Vijf]</span> minuten. De pompkamer open je met de hand en spoel je mee.</p></div></details>
+      <details><summary>Ook voor katten?</summary><div class="answer">
+        <p><span class="ph" title="CHECK: alleen bevestigen als de leverancier het bevestigt">[check bij leverancier]</span></p></div></details>
+      <details><summary>Wie zijn jullie?</summary><div class="answer">
+        <p><span class="ph ph-echt" title="ECHT: bedrijfsgegevens + het oprichtersverhaal, en dat verhaal moet waar zijn">
+        [Bedrijfsnaam], [adres], België, BE 0xxx.xxx.xxx. [Voornaam] neemt op: +32 …, ma tot vr 9 tot 17 u.]</span></p>
+        <p>Korte versie van het verhaal: vier fonteinen versleten, vier pompen dood, de vierde niet weggegooid maar
+        opengemaakt op de keukentafel. Daar zat de spleet.
+        <span class="ph" title="ECHT: dit verhaal moet letterlijk waar zijn. In NL, BE en DE is een verzonnen oprichtersverhaal een misleidende handelspraktijk, en deze koper ruikt het.">[alleen publiceren als dit echt zo gebeurd is]</span></p></div></details>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 12. SLOT ===================== -->
+<section class="deep" style="text-align:center">
+  <div class="wrap narrow">
+    <h2>Je hebt het al twee keer geprobeerd. Dit keer weet je waarom het misging.</h2>
+    <p class="lead">Een fontein die over twee jaar nog loopt, filters die er dan nog zijn, een pomp die je zelf vervangt,
+      en honderd dagen om te zien of je hond hem gebruikt. Verzonden uit <span class="ph">België</span>.</p>
+    <div class="cta-block center">
+      <a class="btn" href="#aanbod">IN MIJN WINKELMAND →</a>
+      <div class="trio">100 dagen geld terug · 14 dagen wettelijke bedenktijd · <span class="ph ph-echt">+32 …</span> neemt op</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 782.6 132" role="img">
+<title>Veskana</title>
+<g transform="translate(-42.312030207253805,-11.715976331360947) scale(1.5621)"><path d="M31.55,45.00 C36.18,35.56 40.70,25.11 44.00,16.00 C48.10,4.67 51.90,4.67 56.00,16.00 C59.30,25.11 63.82,35.56 68.45,45.00 Z" fill="#2F8F9D"/><path d="M27.09,53.71 A26,26 0 1 0 72.91,53.71 Z" fill="#FFFFFF"/></g>
+<g transform="translate(127.59,16.0) scale(1.0)" fill="#FFFFFF">
+<g transform="translate(0,0)">
+<path d="M0,0 L14,0 L36,75.9 L58,0 L72,0 L43,100 L29,100 Z"/>
+</g>
+<g transform="translate(88,0)">
+<path d="M0,0 L62,0 L62,14 L14,14 L14,43 L54,43 L54,57 L14,57 L14,86 L62,86 L62,100 L0,100 Z"/>
+</g>
+<g transform="translate(184,0)">
+<path d="M63,22 C58,11 48,7 36,7 C22,7 8,14 8,27 C8,39 19,44 36,49 C53,54 64,60 64,73 C64,86 50,93 36,93 C24,93 14,89 9,79" fill="none" stroke="#FFFFFF" stroke-width="14" stroke-linecap="butt"/>
+</g>
+<g transform="translate(283,0)">
+<path d="M0,0 L14,0 L14,100 L0,100 Z"/>
+<path d="M52,0 L72,0 L14,58 L14,38 Z"/>
+<path d="M14,42 L14,62 L52,100 L72,100 Z"/>
+</g>
+<g transform="translate(389,0)">
+<path d="M0,100 L14,100 L36,24.1 L58,100 L72,100 L43,0 L29,0 Z"/>
+<path d="M18,62 L54,62 L54,76 L18,76 Z"/>
+</g>
+<g transform="translate(489,0)">
+<path d="M0,0 L14,0 L14,100 L0,100 Z"/>
+<path d="M50,0 L64,0 L64,100 L50,100 Z"/>
+<path d="M0,0 L14,0 L64,74.8 L64,100 L50,100 L0,25.2 Z"/>
+</g>
+<g transform="translate(583,0)">
+<path d="M0,100 L14,100 L36,24.1 L58,100 L72,100 L43,0 L29,0 Z"/>
+<path d="M18,62 L54,62 L54,76 L18,76 Z"/>
+</g>
+</g>
+</svg></div>
+    <div><span class="ph ph-echt">[Bedrijfsnaam]</span> · <span class="ph ph-echt">[adres]</span> ·
+      BE <span class="ph ph-echt">0xxx.xxx.xxx</span> · <span class="ph ph-echt">+32 …</span> · <span class="ph ph-echt">[e-mail]</span></div>
+    <ul class="footlinks">
+      <li><a href="#">100 dagen geld terug</a></li><li><a href="#">Wettelijke garantie</a></li>
+      <li><a href="#">14 dagen bedenktijd</a></li><li><a href="#">Verzending en retour</a></li>
+      <li><a href="#">Onderdelen en filters</a></li><li><a href="#">Voorwaarden</a></li><li><a href="#">Privacy</a></li>
+    </ul>
+    <div style="font-size:.8rem;opacity:.75">Prijzen incl. btw. Geen medische claims: een fontein is geen behandeling.</div>
+  </div>
+</footer>
+
+<div class="sticky" id="sticky">
+  <div class="info"><b id="stickyName">Startpakket · €89</b><small>100 dagen geld terug</small></div>
+  <a class="btn" href="#aanbod">Bestellen →</a>
+</div>
+
+<button class="devbar" id="devbar" type="button">Placeholders verbergen</button>
+
+<script>
+(function(){
+  var sticky=document.getElementById('sticky'), hero=document.querySelector('.hero');
+  if('IntersectionObserver' in window && hero){
+    new IntersectionObserver(function(e){sticky.classList.toggle('show',!e[0].isIntersecting);},
+      {rootMargin:'-120px 0px 0px 0px'}).observe(hero);
+  }
+  var name=document.getElementById('stickyName');
+  function sync(src){
+    document.querySelectorAll('.pack').forEach(function(p){
+      var r=p.querySelector('input'); p.classList.toggle('is-selected', !!r && r.checked);
+    });
+    if(src){
+      // beide keuzeblokken gelijk houden
+      var other=(src.name==='pakket')?'pakket2':'pakket';
+      document.querySelectorAll('input[name='+other+']').forEach(function(i){
+        if(i.value===src.value){ i.checked=true; }
+      });
+      name.textContent=src.value+' · €'+src.dataset.price;
+    }
+  }
+  document.querySelectorAll('.pack input').forEach(function(i){
+    i.addEventListener('change',function(){sync(i);});
+  });
+  sync(document.querySelector('input[name=pakket]:checked'));
+
+  var dev=document.getElementById('devbar');
+  dev.addEventListener('click',function(){
+    var off=document.body.classList.toggle('ph-off');
+    dev.textContent=off?'Placeholders tonen':'Placeholders verbergen';
+  });
+})();
+</script>
+</body>
+</html>

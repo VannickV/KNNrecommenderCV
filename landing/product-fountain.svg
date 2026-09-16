@@ -1,0 +1,63 @@
+<svg viewBox="0 0 420 560" role="img" aria-label="Veskana roestvrijstalen drinkfontein met gebogen kraan en peilvenster">
+<defs>
+  <linearGradient id="vk-body" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#8E9AA0"/><stop offset=".10" stop-color="#C3CBCF"/>
+    <stop offset=".26" stop-color="#FFFFFF"/><stop offset=".45" stop-color="#D7DDDF"/>
+    <stop offset=".62" stop-color="#EDF1F2"/><stop offset=".82" stop-color="#A9B3B8"/>
+    <stop offset="1" stop-color="#7E8A90"/>
+  </linearGradient>
+  <linearGradient id="vk-rim" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#9FAAB0"/><stop offset=".3" stop-color="#F4F7F8"/>
+    <stop offset=".6" stop-color="#C6CED2"/><stop offset="1" stop-color="#8B969C"/>
+  </linearGradient>
+  <linearGradient id="vk-pipe" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#EFF3F4"/><stop offset=".5" stop-color="#B6C0C5"/><stop offset="1" stop-color="#8D989E"/>
+  </linearGradient>
+  <linearGradient id="vk-water" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#7FC3CC"/><stop offset="1" stop-color="#2F8F9D"/>
+  </linearGradient>
+  <radialGradient id="vk-surface" cx=".5" cy=".4" r=".7">
+    <stop offset="0" stop-color="#9AD3DA"/><stop offset="1" stop-color="#3E98A5"/>
+  </radialGradient>
+</defs>
+
+<ellipse cx="210" cy="512" rx="152" ry="20" fill="#1F3A44" opacity=".10"/>
+
+<!-- romp -->
+<path d="M70,300 V470 C70,492 133,504 210,504 C287,504 350,492 350,470 V300 Z" fill="url(#vk-body)"/>
+<path d="M70,462 C70,484 133,496 210,496 C287,496 350,484 350,462 V470 C350,492 287,504 210,504 C133,504 70,492 70,470 Z" fill="#6F7B81" opacity=".35"/>
+
+<!-- rand en wateroppervlak -->
+<ellipse cx="210" cy="300" rx="140" ry="34" fill="url(#vk-rim)"/>
+<ellipse cx="210" cy="302" rx="124" ry="27" fill="url(#vk-surface)"/>
+<ellipse cx="210" cy="302" rx="124" ry="27" fill="none" stroke="#6F7B81" opacity=".35"/>
+<ellipse cx="196" cy="300" rx="52" ry="11" fill="#FFFFFF" opacity=".28"/>
+<ellipse cx="214" cy="308" rx="78" ry="15" fill="none" stroke="#FFFFFF" stroke-width="2" opacity=".35"/>
+
+<!-- kraan -->
+<path d="M300,296 V168 C300,126 266,104 230,104 C198,104 186,128 186,152"
+      fill="none" stroke="url(#vk-pipe)" stroke-width="21" stroke-linecap="round"/>
+<path d="M300,296 V168 C300,126 266,104 230,104 C198,104 186,128 186,152"
+      fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" opacity=".55"
+      transform="translate(-5,-1)"/>
+<rect x="173" y="146" width="26" height="15" rx="5" fill="url(#vk-rim)"/>
+<ellipse cx="300" cy="296" rx="13" ry="6" fill="#98A3A9"/>
+
+<!-- waterstraal -->
+<path d="M186,162 C182,196 190,214 186,240 C182,264 189,278 186,294"
+      fill="none" stroke="url(#vk-water)" stroke-width="8" stroke-linecap="round" opacity=".75"/>
+<path d="M186,166 C183,196 190,212 186,238" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" opacity=".55"/>
+<ellipse cx="186" cy="296" rx="26" ry="7" fill="#FFFFFF" opacity=".45"/>
+<circle cx="205" cy="286" r="3" fill="#FFFFFF" opacity=".6"/>
+<circle cx="168" cy="278" r="2.4" fill="#FFFFFF" opacity=".5"/>
+
+<!-- peilvenster -->
+<rect x="104" y="352" width="40" height="96" rx="20" fill="#5E6A70"/>
+<rect x="109" y="357" width="30" height="86" rx="15" fill="#2A3B43"/>
+<path d="M109,392 h30 v36 a15,15 0 0 1 -15,15 a15,15 0 0 1 -15,-15 Z" fill="url(#vk-water)"/>
+<rect x="116" y="366" width="7" height="62" rx="3.5" fill="#FFFFFF" opacity=".22"/>
+
+<!-- rvs-glans -->
+<path d="M262,312 C262,400 262,440 262,468" stroke="#FFFFFF" stroke-width="10" opacity=".22" stroke-linecap="round"/>
+<path d="M96,316 C96,392 96,432 96,462" stroke="#FFFFFF" stroke-width="5" opacity=".14" stroke-linecap="round"/>
+</svg>

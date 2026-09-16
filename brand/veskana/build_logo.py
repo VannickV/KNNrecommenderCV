@@ -4,9 +4,9 @@ gedefinieerd (geen font-afhankelijkheid), zodat elke SVG overal identiek rendert
 import math, os
 
 # ---------- kleuren ----------
-INK   = "#0D2A33"   # Steel Ink
-AQUA  = "#0F8F9E"   # Veskana Aqua
-PAPER = "#F6F4EF"   # Paper
+INK   = "#1F3A44"   # Petrolblauw
+AQUA  = "#2F8F9D"   # Teal
+PAPER = "#F7F5F0"   # Warm gebroken wit
 
 # ---------- letters, elk in een vak van 72 x 100, stokdikte 14 ----------
 L = {
